@@ -1,0 +1,12 @@
+{
+  "name": "sync-to-google-sheets",
+  "version": "1.0.0",
+  "description": "Sync to Google Sheets",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Lakhan Nad",
+  "license": "MIT",
+  "dependencies": {
+    "googleapis": "^81.0.0"
+  }
+}

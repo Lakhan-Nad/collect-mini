@@ -1,0 +1,11 @@
+/node_modules/
+/package-lock.json
+
+/dist
+/types
+
+/coverage
+/logs
+
+/test.env.js
+/test.setup.js

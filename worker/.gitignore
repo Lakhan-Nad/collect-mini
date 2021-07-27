@@ -1,0 +1,9 @@
+/package-lock.json
+/node_modules/
+
+/types/
+/dist/
+
+/.env
+/logs
+/worker-logs

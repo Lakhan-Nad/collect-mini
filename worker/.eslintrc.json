@@ -1,0 +1,72 @@
+{
+  "plugins": ["import", "@typescript-eslint", "prettier"],
+  "extends": [
+    "plugin:import/typescript",
+    "plugin:import/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "script"
+  },
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "no-console": "error",
+    "import/no-named-as-default-member": "off",
+    "import/no-named-as-default": "off",
+    "import/no-duplicates": "error",
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "index",
+          "sibling",
+          "parent",
+          "type",
+          "object"
+        ]
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/explicit-module-boundary-types": [
+      "error",
+      {
+        "allowArgumentsExplicitlyTypedAsAny": true
+      }
+    ],
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "types": {
+          "String": {
+            "message": "Use string instead",
+            "fixWith": "string"
+          },
+          "Boolean": {
+            "message": "Use boolean instead",
+            "fixWith": "boolean"
+          },
+          "Number": {
+            "message": "Use number instead",
+            "fixWith": "number"
+          },
+          "BigInt": {
+            "message": "Use bigint instead",
+            "fixWith": "bigint"
+          }
+        }
+      }
+    ]
+  }
+}
